@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"  type="image/png" sizes="500x500" href="img/icon-152x152.png">
+    <!-- Primary Meta Tags -->
+    <title>Taufiq Aziz - Webpage</title>
+    <meta name="title" content="Taufiq Aziz - Webpage">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- <script defer src="visitor.js"></script> -->
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="img/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="img/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="img/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="img/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="img/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="img/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="img/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="img/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#7e3af2" />
+    <meta name="theme-color" content="#7e3af2" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="container mt-4">
+      <!-- Bio Page -->
+      <div class="card">
+        <div class="card-body">
+          <div class="text-center">
+           <img class="rounded-circle" alt="100x100" src="img/profile.jpg"
+          data-holder-rendered="true" width="150" height="150">
+
+          <h1 class="title mt-2">
+          <span class="myBadge">
+              <i class="bi bi-patch-check-fill"></i>
+            </span>Taufiq Aziz</h1>
+          <!-- <p class="title2">Backend Developer</p> -->
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <div class="card-body">
+            <!-- <div class="h4 mt-0 title">Basic Information</div> -->
+            <div class="row">
+              <div class="col-sm-4"><strong class="text-uppercase">NIM:</strong></div>
+              <div class="col-sm-8">21195038</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Kelas:</strong></div>
+              <div class="col-sm-8">Reguler Sore</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Semester:</strong></div>
+              <div class="col-sm-8">5 (lima)</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Mata Kuliah:</strong></div>
+              <div class="col-sm-8">Pemrograman Perangkat Bergerak</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Tujuan Belajar PWA:</strong></div>
+              <div class="col-sm-8">Menguasai pengembangan PWA yang canggih</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-bio">
+          <div class="card-body">
+              <!-- <p class="bio-body">
+                Hello, My name is Reza Priatna, I am from Indonesia. I Learned Programming 3 Years Ago. I Am Freelancer Programmer As Backend Developer And Bot Maker, Sometime I really like to make simple programs with Python and PHP programming languages.
+              </p> -->
+            </div>
+          </div>
+          <div class="text-center icon">
+            <!-- Tambahkan tautan ke masing-masing ikon dengan atribut href -->
+            <a href="https://facebook.com/azizt91"><i class="bi bi-facebook ml-4"></i></a>
+            <a href="https://www.instagram.com/azizt91"><i class="bi bi-instagram ml-4"></i></a>
+            <a href="https://wa.me/+6281914170701"><i class="bi bi-whatsapp ml-4"></i></a>
+        </div>
+        </div>
+      </div>
+      <!--Comment-->
+      <div class="card mt-2">
+        <div class="card-body">
+          <div class="container mt-3">
+              <form id="komentar-form" class="mb-4">
+                <h2 class="title"> Tinggalkan Komentar</h2>
+                <input type="text" id="nama" class="form-control" rows="3" placeholder="Nama" required>
+                <textarea id="komentar" class="form-control" rows="4" placeholder="Ketik komentar Anda di sini"></textarea>
+                <button type="submit" class="btn btn-primary mt-3">Kirim</button>
+              </form>
+          <div id="daftar-komentar" class="rounded p-3">
+                  <!-- Komentar akan ditampilkan di sini -->
+          </div>    
+          </div>  
+        </div>
+      </div>
+      <!-- Project -->
+    </div>
+    <footer class="mt-auto]">
+      <div class="text-center">
+      <p class="footer-title">Taufiq Aziz - 21195038</p>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="indexeddb.js"></script>
+
+    <!-- Register Service Worker -->
+    <script>
+      navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+      .then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+      console.error('Service Worker registration failed:', error);
+      });
+    </script>
+
+    <!-- Izin Notofikasi -->
+    <script>
+      if ('Notification' in window) {
+        Notification.requestPermission()
+          .then(function(permission) {
+            if (permission === 'granted') {
+              // Izin notifikasi diberikan
+            } else if (permission === 'denied') {
+              // Izin notifikasi ditolak
+            } else {
+              // Izin notifikasi belum diajukan
+            }
+          })
+          .catch(function(error) {
+            console.error('Gagal meminta izin notifikasi:', error);
+          });
+      }
+      </script>
+
+
+  </body>
+</html>
